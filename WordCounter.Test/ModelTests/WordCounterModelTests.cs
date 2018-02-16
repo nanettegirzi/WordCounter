@@ -13,8 +13,7 @@ namespace WordCounter.Tests
         {
         RepeatCounter testRepeatCounter = new RepeatCounter("a", "a");
         int countWords = testRepeatCounter.CountWords();
-        Assert.AreEqual("a", countWords);
-
+        Assert.AreEqual(1, countWords);
         }
     }
 }
