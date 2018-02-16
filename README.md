@@ -54,6 +54,15 @@ This program is a basic web application where a user will Input 1. A word, and I
 * Output Example
     * "2"  
 
+* Behavior
+  * Detect occurrence of words with different cases in string. Making sure all instances of word no matter what case is entered will be counted.
+* Input Word
+    * "and"
+* Input String
+    * "me And you, and everyone we know"
+* Output Example
+    * "2"  
+
 
 ## Known Bugs
 

@@ -13,6 +13,7 @@ namespace WordCounter.Controllers
             return View();
         }
 
+
         [HttpPost("/wordcounter")]
         public ActionResult Results()
         {

@@ -39,5 +39,13 @@ namespace WordCounter.Tests
         int countWords = testRepeatCounter.CountWords();
         Assert.AreEqual(2, countWords);
         }
+
+        [TestMethod]
+        public void RepeatCounter_uppercaseandlowercase_2()
+        {
+        RepeatCounter testRepeatCounter = new RepeatCounter("and", "me And you, and everyone we know");
+        int countWords = testRepeatCounter.CountWords();
+        Assert.AreEqual(2, countWords);
+        }
     }
 }
