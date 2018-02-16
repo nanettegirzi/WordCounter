@@ -1,0 +1,16 @@
+@{
+  Layout="_Layout";
+}
+
+<h3>Enter a word below, then a phrase or sentence to see how many times your word appears.</h3>
+  <form action="/wordcounter" method="post">
+  	<div class="form-group">
+      <label for="word">Word:</label>
+      <input id="word" name="Word" type="text" class="form-control" placeholder="enter word here" autofocus>
+    </div>
+    <div class="form-group">
+      <label for="phrase">Enter phrase or sentence:</label>
+      <input id="phrase" name="phrase" type="text" class="form-control" placeholder="enter sentence/phrase here" autofocus>
+    </div>
+  	<button class="btn btn-info" type="submit" name="submit-check">Count!</button>
+  </form>

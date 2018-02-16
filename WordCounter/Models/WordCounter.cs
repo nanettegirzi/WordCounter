@@ -20,7 +20,7 @@ namespace WordCounter.Models
             return _userWord;
         }
 
-        pulic string GetUserString()
+        public string GetUserString()
         {
             return _userString;
         }

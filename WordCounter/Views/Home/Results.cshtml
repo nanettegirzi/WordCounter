@@ -1,0 +1,11 @@
+@{
+  Layout="_Layout";
+}
+
+	<p>Your Word: @Model.GetUserWord()</p>
+	<p>Your Phrase: @Model.GetUserString()</p>
+    <hr>
+    <br>
+    <p>There are @Model.CountWords() instances of your @Model.GetUserWord() in your phrase.</p>
+    <br>
+	<a href="/"><button class="btn btn-info" type="button" name="back-button">Try Again</button></a>
