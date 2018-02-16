@@ -15,6 +15,16 @@ namespace WordCounter.Models
             _userString = userString;
         }
 
+        public string GetUserWord()
+        {
+            return _userWord;
+        }
+
+        pulic string GetUserString()
+        {
+            return _userString;
+        }
+
         public int CountWords()
         {
             int count = 0;
