@@ -28,8 +28,8 @@ namespace WordCounter.Models
         public int CountWords()
         {
             int count = 0;
-            string userString = _userString;
-            string userWord = _userWord;
+            string userString = _userString.ToLower();
+            string userWord = _userWord.ToLower();
 
             string [] userInputString = userString.Split();
 
