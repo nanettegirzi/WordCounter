@@ -21,7 +21,7 @@ namespace WordCounter.Controllers
             string userString= Request.Form["phrase"];
 
             RepeatCounter newRepeatCounter = new RepeatCounter(userWord, userString);
-            return View("Index", newRepeatCounter);
+            return View("Results", newRepeatCounter);
         }
 
     }

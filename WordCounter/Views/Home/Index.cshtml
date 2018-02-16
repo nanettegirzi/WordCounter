@@ -3,7 +3,7 @@
 }
 
 <h3>Enter a word below, then a phrase or sentence to see how many times your word appears.</h3>
-  <form action="wordcounter" method="post">
+  <form action="/wordcounter" method="post">
   	<div class="form-group">
       <label for="word">Word:</label>
       <input id="word" name="Word" type="text" class="form-control" placeholder="enter word here" autofocus>
@@ -16,13 +16,3 @@
   </form>
   <br>
   <hr>
-  @if(Model != null)
-  {
-      <h3>Your Word: @Model.GetUserWord()</h3>
-  	  <h3>Your Phrase: @Model.GetUserString()</h3>
-      <hr>
-      <br>
-      <h3>There are @Model.CountWords() instances of  "@Model.GetUserWord()" in your phrase.</h3>
-      <br>
-  	<a href="/"><button class="btn btn-info" type="button" name="back-button">Try Again</button></a>
-  }
