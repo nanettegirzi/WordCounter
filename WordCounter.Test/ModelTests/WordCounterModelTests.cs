@@ -15,5 +15,29 @@ namespace WordCounter.Tests
         int countWords = testRepeatCounter.CountWords();
         Assert.AreEqual(1, countWords);
         }
+
+        [TestMethod]
+        public void RepeatCounter_singlewordtosingeword_1()
+        {
+        RepeatCounter testRepeatCounter = new RepeatCounter("and", "and");
+        int countWords = testRepeatCounter.CountWords();
+        Assert.AreEqual(1, countWords);
+        }
+
+        [TestMethod]
+        public void RepeatCounter_singlewordtomultiplewordstring_1()
+        {
+        RepeatCounter testRepeatCounter = new RepeatCounter("and", "me and you");
+        int countWords = testRepeatCounter.CountWords();
+        Assert.AreEqual(1, countWords);
+        }
+
+        [TestMethod]
+        public void RepeatCounter_singlewordtomultiplewordstring_2()
+        {
+        RepeatCounter testRepeatCounter = new RepeatCounter("and", "me and you, and everyone we know");
+        int countWords = testRepeatCounter.CountWords();
+        Assert.AreEqual(2, countWords);
+        }
     }
 }
