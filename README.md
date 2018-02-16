@@ -46,7 +46,7 @@ This program is a basic web application where a user will Input 1. A word, and I
   * "1"  
 
 * Behavior
-  * Detect occurrence of single word with multiple word input. Making sure will loop through all words and output correct count. 
+  * Detect occurrence of single word with multiple word input. Making sure will loop through all words and output correct count.
 * Input Word
   * "and"
 * Input String
